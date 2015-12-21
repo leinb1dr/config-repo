@@ -5,7 +5,6 @@ eureka:
   serviceUrl:
     defaultZone: http://localhost:8761/eureka/
   instance:
-    instanceId: ${spring.application.name}:${spring.application.instance_id:${random.value}}
-    home-page-url-path: /${spring.application.name}
-    health-check-url-path: /${spring.application.name}/health
-    status-page-url-path: /${spring.application.name}/info
+    home-page-url-path: /acs-reporting
+    health-check-url-path: /acs-reporting/health
+    status-page-url-path: /acs-reporting/info
