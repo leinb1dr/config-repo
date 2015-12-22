@@ -41,3 +41,26 @@ eureka:
     max-time-for-replication: 600000
   instance:
     hostname: localhost
+
+---
+spring:
+  profiles: dev
+server:
+  port: 8761
+eureka:
+  client:
+    registerWithEureka: false
+    fetchRegistry: true
+    serviceUrl:
+      defaultZone: http://vocdiscovery-env.elasticbeanstalk.com:8761/eureka/
+  server:
+    waitTimeInMsWhenSyncEmpty: 0
+    enable-self-preservation: true
+    number-of-replication-retries: 0
+    response-cache-auto-expiration-in-seconds: 500
+    remote-region-registry-fetch-interval: 15
+    max-time-for-replication: 600000
+    disable-delta: true
+  instance:
+    hostname: vocdiscovery-env.elasticbeanstalk.com
+    lease-expiration-duration-in-seconds: 45
