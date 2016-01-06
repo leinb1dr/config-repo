@@ -24,7 +24,7 @@ spring:
 
 eureka:
   client:
-    registerWithEureka: false
+    registerWithEureka: true
     fetch-registry: true
     registry-fetch-interval-seconds: 30
     disable-delta: true
