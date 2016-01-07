@@ -18,7 +18,6 @@ eureka:
     status-page-url-path: /status
 
 ---
-
 spring:
   profiles: dev
 
