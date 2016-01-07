@@ -14,3 +14,4 @@ eureka:
     health-check-url-path: /health
     status-page-url-path: /health
     hostname: voctestservice-env.elasticbeanstalk.com
+    port: 80
