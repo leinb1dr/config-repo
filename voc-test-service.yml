@@ -1,7 +1,7 @@
 eureka:
   client:
-    registerWithEureka: false
-    fetch-registry: true
+    registerWithEureka: true
+    fetch-registry: false
     registry-fetch-interval-seconds: 30
     disable-delta: true
     serviceUrl:
