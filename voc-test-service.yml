@@ -13,3 +13,4 @@ eureka:
     home-page-url-path: /
     health-check-url-path: /health
     status-page-url-path: /health
+    hostname: voctestservice-env.elasticbeanstalk.com
