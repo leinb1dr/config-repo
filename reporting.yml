@@ -1,0 +1,27 @@
+spring:
+  profiles: Local
+
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: false
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+  instance:
+    home-page-url-path: /acs-reporting/
+    health-check-url-path: /acs-reporting/health
+    status-page-url-path: /acs-reporting/info
+---
+spring:
+  profiles: dev
+
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: false
+    serviceUrl:
+      defaultZone: http://vocdiscovery-env.elasticbeanstalk.com/eureka/
+  instance:
+    home-page-url-path: /acs-reporting/
+    health-check-url-path: /acs-reporting/health
+    status-page-url-path: /acs-reporting/info
